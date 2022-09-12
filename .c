@@ -57,7 +57,7 @@ int main(){
             soma=somar_pares(v_3,N);
         }else{
             if(soma<somar_pares(v_3,N)){
-                soma=somar_pares(v_3 , N);
+                soma=somar_pares(v_3,N);
             }else{
                 if(soma<somar_pares(v_4,N)){
                     soma=somar_pares(v_4,N);
