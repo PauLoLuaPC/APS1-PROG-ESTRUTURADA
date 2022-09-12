@@ -24,28 +24,28 @@ int main(){
 	gera_valores(v_1);
 	imprimir_vetor(v_1);
 
-    printf("\nSegundo vetor:\n\n");
+  	printf("\nSegundo vetor:\n\n");
 	gera_valores(v_2);
 	imprimir_vetor(v_2);
 
-    printf("\nTerceiro vetor:\n\n");
+   	printf("\nTerceiro vetor:\n\n");
 	gera_valores(v_3);
 	imprimir_vetor(v_3);
 
-    printf("\nQuarto vetor:\n\n");
+    	printf("\nQuarto vetor:\n\n");
 	gera_valores(v_4);
 	imprimir_vetor(v_4);
 
-    printf("\nQuinto vetor:\n\n");
+    	printf("\nQuinto vetor:\n\n");
 	gera_valores(v_5);
 	imprimir_vetor(v_5);
 
-    printf("\nSoma dos vetores pares:\n\n");
-    printf("Soma vetor 1: %d\n\n", somar_pares(v_1,N));
-    printf("Soma vetor 2: %d\n\n", somar_pares(v_2,N));
-    printf("Soma vetor 3: %d\n\n", somar_pares(v_3,N));
-    printf("Soma vetor 4: %d\n\n", somar_pares(v_4,N));
-    printf("Soma vetor 5: %d\n\n", somar_pares(v_5,N));
+	printf("\nSoma dos vetores pares:\n\n");
+	printf("Soma vetor 1: %d\n\n", somar_pares(v_1,N));
+	printf("Soma vetor 2: %d\n\n", somar_pares(v_2,N));
+	printf("Soma vetor 3: %d\n\n", somar_pares(v_3,N));
+	printf("Soma vetor 4: %d\n\n", somar_pares(v_4,N));
+	printf("Soma vetor 5: %d\n\n", somar_pares(v_5,N));
 
 
     soma=0;
@@ -70,15 +70,15 @@ int main(){
         }
     }
 
-    printf("\nMaior vetor: %d\n",soma);
+	printf("\nMaior vetor: %d\n",soma);
 
     return 0;
 }
 
 int gera_valores(int x[]){
     int i;
-    for(i=0;i<N;i++){
-        x[i] = rand()%10;
+   	 for(i=0;i<N;i++){
+        	x[i] = rand()%10;
     }
 }
 int somar_pares(int x[],int q){
@@ -90,8 +90,8 @@ int somar_pares(int x[],int q){
 }
 void imprimir_vetor(int x[]){
 	int i;
-	for(i=0;i<N;i++){
-		printf("[%d]=%d\n", i, x[i]);
+		for(i=0;i<N;i++){
+			printf("[%d]=%d\n", i, x[i]);
 	}
 }
 int par(int x){
